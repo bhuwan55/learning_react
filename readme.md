@@ -30,3 +30,35 @@ Use react powered frameworks like Next.js, Remix etc or
 * index.js then app.js in classic one
 * main.jsx then app.jsx in bundler one
 * if your js code is returning html then its fiel extension is .jsx
+
+## Understanding states in react
+
+* to solve ghost ui problem
+
+> import { useState } from 'react'
+
+> function App() {
+
+>  const [counter, setCounter] = useState(15)
+
+>  function addValue(){
+
+>    setCounter(counter+1)
+>  }
+
+>  function decreaseValue(){
+>    setCounter(counter-1)
+>  }
+
+>  return (
+>    <>
+>      <h1 Here is a counter: {counter}</h1>
+>      <p>Counter: {counter}</p>
+>      <button onClick={addValue}>Add value</button> {" "}
+>      <button onClick={decreaseValue} Reduce value </button>
+>      <footer>Footer note: {counter}</footer>
+>    </>
+>  )
+>}
+>
+>export default App
